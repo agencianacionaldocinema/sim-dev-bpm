@@ -2,9 +2,9 @@
 
 Esse ambiente possui um container rodando:
 
-. Business central http://localhost:8080/business-central
-. Kie-server http://localhost:8080/kie-server
-. Dashboard http://localhost:8080/dashboard
+* Business central http://localhost:8080/business-central
+* Kie-server http://localhost:8080/kie-server
+* Dashboard http://localhost:8080/dashboard
 
 ![esquema disposição containers](esquema.png)
 
