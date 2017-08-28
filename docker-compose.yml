@@ -4,7 +4,7 @@ services:
     build: 
       context: ./sim-dev-bpm
       args: 
-        - SRC_GIT_REPO=http://docker:docker12345@192.168.21.46/ancine/sin-bpm.git
+        - SRC_GIT_REPO=http://gitlab.ancine.gov.br/ancine/sin-bpm.git
         - SRC_GIT_BRANCH=feature/back-Atualiza-dependencias-para-eap6.4.16-bpms6.4.4
     image: ancine/sim-dev-bpm:latest
     ports:
