@@ -1,6 +1,5 @@
 #!/bin/bash
 BUILD_DIR=/opt/jboss/src
-OUTPUT_DIR=/opt/jboss/eap/standalone/deployments
 
 if [ ! -d  $DATA_DIR/.niogit ]; then
     cp -a /opt/jboss/repositorio-local-niogit $DATA_DIR/.niogit 
@@ -26,4 +25,4 @@ fi
 
 mvn install -DskipTests -f $BUILD_DIR/sin-bpm/pom.xml
 
-/opt/jboss/eap/bin/standalone.sh -c standalone.xml -b 0.0.0.0 -bmanagement 0.0.0.0
+$JBOSS_HOME/bin/standalone.sh -c standalone.xml -b 0.0.0.0 -bmanagement 0.0.0.0
